@@ -1,0 +1,1620 @@
+/* || GENERAL || */
+* {
+	font-family: 'Belleza', sans-serif;
+}
+
+
+
+
+/* || TITRES || */
+h2 {
+	text-shadow: 2px 2px 2px grey;
+	margin-top:75px;
+	margin-bottom:40px;
+}
+
+
+
+
+/* || MENU DE NAVIGATION || */
+/* | Bloc principal (ensemble de l'entête) | */
+nav {
+	position: relative;
+	text-align:center;
+	background:#3C3B6E url("./Image(s)/Drapeau_Americain.jpg");
+	background-size:cover;
+	background-repeat:repeat-y;
+	width:100%;
+	height:220px;
+}
+
+.Menu_Nav {
+	width: 100%;
+}
+
+
+/* | Menu de navigation supérieur (Rechercher ET Mon Compte) | */
+.Partie_Gauche1_Nav_Haute {
+	display: inline-block;
+	width: 33%;
+}
+
+.Partie_Gauche2_Nav_Haute {
+	display: inline-block;
+	width: 37%;
+	height: 75px;
+}
+
+.Partie_Droite_Nav_Haute {
+	display: inline-block;
+	text-align:right;
+	width: 30%;
+	height: 75px; 
+	top:0;
+	right:0;
+	margin:auto;
+}
+
+.Partie_Gauche2_Nav_Haute > .Rechercher > li {
+	display: inline-block;
+	text-align: center;
+	background-color:#3C3B6E;
+	width:450px;
+	padding:10px;
+	border-radius: 10px;
+	border:2px solid red;	
+}
+
+.Partie_Gauche2_Nav_Haute > .Rechercher > li > a {
+	color: white;
+	text-decoration: none;
+}
+
+.Partie_Gauche2_Nav_Haute > .Rechercher > li:hover {
+	background-color:#504E91;
+	transition:0.5s;
+}
+
+.Rechercher input {
+ 	width: 100%;
+ 	border-radius: 10px;
+}
+
+.Partie_Droite_Nav_Haute > .MonCompte > li {
+	display: inline-block;
+	text-align:center;
+	background-color:#3C3B6E;
+	width:450px;
+	padding:10px;
+	border-radius: 5px 0 0 5px;
+	border:2px solid red;
+}
+
+.Partie_Droite_Nav_Haute > .MonCompte > li > a {
+	color:white;
+	text-decoration: none;
+}
+
+.Partie_Droite_Nav_Haute > .MonCompte > li:hover {
+	background-color:#504E91;
+	transition:0.5s;
+}
+
+
+/* | Fonction "Rechercher" du menu de navigation supérieur | */
+::-webkit-input-placeholder { /* Pour Microsoft Edge */
+  	color: black
+  	opacity:1;
+}
+
+:-ms-input-placeholder { /* Pour Internet Explorer */
+  	color: black;
+ 	opacity:1;
+}
+
+::placeholder {
+  	color: black;
+   	opacity:1;
+}
+
+
+/* | Menu de navigation inférieur (menus déroulants) | */
+.Barre_Nav_Basse {
+	display: inline-block;
+	background-color:#3C3B6E;
+	width: 100%;
+	margin-top:115px;
+}
+
+.bouton {
+	display:inline-block;
+	text-align:center;
+	background-color:#3C3B6E;
+	color:white;
+	width:14%;
+	padding-top:6px;
+	padding-bottom:6px;
+	padding-left:15px;
+	padding-right:10px;
+	border-left:2px solid red;
+	border-right:2px solid red;
+	margin-left:5px;
+	margin-right:5px;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+.bouton a {
+	color:white;
+	text-decoration:none;
+}
+
+.bouton:hover {
+	transition:0.5s;
+	background-color:#504E91;
+}
+
+.bouton_deroulant {
+	display: inline-block;
+	position: relative;
+	background-color:#3C3B6E;
+	color:white;
+	text-align:center;
+	width:14%;
+	padding-top:6px;
+	padding-bottom:6px;
+	padding-left:15px;
+	padding-right:10px;
+	border-left:2px solid red;
+	border-right:2px solid red;
+	margin-left:5px;
+	margin-right:5px;
+	margin-top:0px;
+	margin-bottom:0px;
+
+}
+
+.menu_thematique {
+	display: none;
+	position: absolute;
+	text-align:center;
+	background-color: #3C3B6E;
+	left:0px;
+	width:100%;
+	top:30px;
+}
+
+.menu_thematique a {
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	text-decoration: none;
+	background-color: #3C3B6E;
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	display: block;
+	border-top:1px solid red;
+	width:100%;
+}
+
+.menu_thematique a:hover {
+	background-color:#504E91;
+	transition:0.5s;
+}
+
+.bouton_deroulant:hover .menu_thematique {
+	content: '\00bb';
+	display: block;
+	z-index:1;
+}
+
+.menu_apropos {
+	display: none;
+	position: absolute;
+	text-align:center;
+	background-color: #3C3B6E;
+	left:0px;
+	width:100%;
+	top:30px;
+}
+
+.menu_apropos  a {
+	display: block;
+	text-align:center;
+	text-decoration: none;
+	color: white;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	border-top:1px solid red;
+	width:100%;
+}
+
+.menu_apropos  a:hover {
+	background-color:#504E91;
+	transition:0.5s;
+}
+
+.bouton_deroulant:hover {
+	background-color:#504E91;
+	transition:0.5s;
+}
+
+.bouton_deroulant a {
+	color:white;
+	text-decoration: none;
+}
+
+.bouton_deroulant:hover .menu_apropos {
+	display: block;
+	z-index:1;
+}
+
+.A_propos_bloc_texte {  
+	display: inline-block;
+  	width: 825px;
+  	height: 530px;    	
+}
+
+.A_propos_texte {
+	margin-bottom:20px;
+}
+
+.A_propos_texte_1 {
+	text-align:center;
+	font-weight: bold;
+	font-size:1.4em;
+	color:#504E91;
+}
+
+.A_propos_texte_2 {
+	text-align:justify;
+	font-size:1.25em;
+}
+
+.Qui_sommes-nous_bloc_texte {  
+	display: inline-block;
+  	width: 800px;
+  	height: 530px;    
+  	margin-bottom:40px;	
+}
+
+.Qui_sommes-nous_texte  {  
+	text-align: justify;
+	font-size:1.2em;	
+}
+
+.Qui_sommes-nous_texte > ul > li{  
+	font-weight: bold; 	
+	color:#504E91;
+}
+
+.Nos_objectifs_bloc_texte {  
+	display: inline-block;
+ 	width:700px;
+  	height: 530px;    
+}
+
+.Nos_objectifs_texte > ol > li{  
+	font-weight: bold; 	
+	color:#504E91;
+}
+
+.Nos_objectifs_texte  {  
+	text-align: justify;
+	font-size:1.2em;	
+}
+
+.Nos_sources_bloc_texte {  
+	display: inline-block;
+  	width: 700px;
+  	height: 530px;    	
+}
+
+.Nos_sources_bloc_texte ul > li > a {  
+	text-decoration: none;
+	color:#504E91;
+}
+
+.Nos_sources_bloc_texte ul > li {  
+	color:#504E91;
+}
+
+.Nos_sources_texte  {  
+	text-align: justify;
+	font-size:1.2em;	
+}
+
+.Nos_sources_texte > ul > li{  
+	font-weight: bold; 	
+}
+
+.contact {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+.contact h2 {
+	text-align:center;
+	font-size:1.8em;
+	text-decoration: underline solid #3C3B6E;
+}
+.BlocContact {
+	text-align:center;
+	width:45%;
+	display:inline-block;
+	vertical-align:top;
+}
+.BlocContact h3{
+	color:#504E91;
+}
+
+.BlocContact p{
+	line-height:170%;
+	font-size:17px;
+	
+}
+
+.Mon_Compte_bloc_texte {  
+	display: inline-block;
+  	width: 800px;
+  	height: 530px;    
+  	margin-bottom:40px;	
+}
+
+.Mon_Compte_texte  {  
+	text-align: justify;
+	font-size:1.2em;	
+}
+
+.Mon_Compte_texte > ul > li{  
+	font-weight: bold; 	
+	color:#504E91;
+	list-style: none;
+}
+
+.Mon_Compte_Pseudonyme {
+display:inline-block;
+width:100%;
+margin-bottom:20px;
+}
+
+.Mon_Compte_Mot_de_passe {
+display:inline-block;
+width:100%;
+}
+
+.Mon_Compte_Pseudonyme input {
+ 	width: 30%;
+}
+
+.Mon_Compte_Mot_de_passe input {
+ 	width: 30%;
+}
+
+
+
+/* || CORPS DU TEXTE || */
+body {
+ 	margin-top: 0px;
+ 	margin-bottom: 0px;
+ 	margin-right: 0px;
+ 	margin-left: 0px;
+}
+
+
+
+
+/* || ACCUEIL || */
+.Bloc_principal_secondaire {  /* Bloc principal contenant des sous-blocs (Bloc_principal et Bloc_secondaire) */
+	display: inline-block;    
+	width:90%;
+	margin-top:30px; 	
+}
+
+/* | Blocs de la partie centrale de la page | */
+.Bloc_principal {  /* Bloc contenant des sous-blocs (1,2,3,4) */
+	display: inline-block;
+  	width: 40%;
+  	height: 50%; 	
+}
+
+.Bloc_1 { /* Sous-bloc 1 */
+	display: inline-block;
+	background-image:url("./Image(s)/Culture américaine.jpg");
+  	background-size:cover;
+  	width: 99%;
+  	height: 150px;
+  	border: 1px solid black;    
+  	margin-bottom:20px;
+}
+
+.Bloc_1-0_bandeau { /* Entête descriptive sous-bloc 1 avec texte */
+	display:inline-block;
+	width:100%;
+	height:77%;
+	font-size:0em;
+	opacity:0.9;	
+	line-height:110px;
+}
+
+.Bloc_1-0_bandeau:hover { /* Entête descriptive sous-bloc 1 avec texte */
+	display:inline-block;
+	width:100%;
+	height:77%;
+	text-align: center;
+	background-color: #3C3B6E;
+	color:white;
+	font-size:1.2em;
+	opacity:0.9;	
+	line-height:110px;
+}
+
+.Bloc_1_bandeau { /* Entête sous-bloc 1 avec texte */
+	display:inline-block;
+	width:100%;
+	float:bottom;
+	text-align: center;
+	background-color: #3C3B6E;
+	color:white;
+	font-size:1.5em;
+	opacity:0.9;	
+	line-height:35px;
+}
+
+.Bloc_2 { /* Sous-bloc 2 (visible) */
+	display: inline-block;
+  	width: 100%;
+  	height: 150px;   
+  	margin-bottom:20px;
+}
+
+.Bloc_2_1 { /* Sous-bloc 1 de sous-bloc 2 (visible) */
+	display: inline-block;
+	background-image:url("./Image(s)/Art.jpg");
+  	background-size:cover;
+	float:left;
+  	width: 40%;
+  	height: 150px;
+  	border: 1px solid black;     	
+}
+
+.Bloc_2-0_bandeau { /* Entête descriptive sous-bloc 2 avec texte */
+	display:inline-block;
+	width:100%;
+	height:77%;
+	font-size:0em;
+	opacity:0.9;	
+	line-height:110px;
+}
+
+.Bloc_2-0_bandeau:hover { /* Entête descriptive sous-bloc 2 avec texte */
+	display:inline-block;
+	width:100%;
+	height:77%;
+	text-align: center;
+	background-color: #3C3B6E;
+	color:white;
+	font-size:1.2em;
+	opacity:0.9;	
+	line-height:110px;
+}
+
+.Bloc_2_bandeau { /* Entête sous-bloc 2 avec texte */
+	display:inline-block;
+	float:bottom;
+	width:100%;
+	text-align: center;
+	background-color: #3C3B6E;
+	color:white;
+	font-size:1.5em;
+	opacity:0.9;	
+	line-height:35px;
+}
+
+.Bloc_2_2 { /* Sous-bloc 2 de sous-bloc 2 (invisible) */
+	display: inline-block;
+	float:left;
+  	width: 19%;
+  	height: 150px;  
+}
+
+.Bloc_2_3 { /* Sous-bloc 3 de sous-bloc 2 (visible) */
+	display: inline-block; 
+	background-image:url("./Image(s)/Gastronomie.jpg");
+  	background-size:cover;
+	float:right;
+  	width: 40%;
+  	height: 150px;
+  	border: 1px solid black;    
+}
+
+.Bloc_3 { /* Sous-bloc 3 */
+	display: inline-block;
+  	width: 100%;
+  	height: 150px;  	
+  	margin-bottom:20px;
+}
+
+.Bloc_3_1 { /* Sous-bloc 1 de sous-bloc 3 (visible) */
+	display: inline-block;
+	background-image:url("./Image(s)/Mode de vie.jpg");
+  	background-size:cover;
+	float:left;
+  	width: 40%;
+  	height: 150px;
+  	border: 1px solid black;    	
+}
+
+.Bloc_3_2 { /* Sous-bloc 2 de sous-bloc 3 (invisible) */
+	display: inline-block;
+	float:left;
+  	width: 19%;
+  	height: 150px;   	
+}
+
+.Bloc_3-0_bandeau { /* Entête descriptive sous-bloc 3 avec texte */
+	display:inline-block;
+	width:100%;
+	height:77%;
+	font-size:0em;
+	opacity:0.9;	
+	line-height:110px;
+}
+
+.Bloc_3-0_bandeau:hover { /* Entête descriptive sous-bloc 3 avec texte */
+	display:inline-block;
+	width:100%;
+	height:77%;
+	text-align: center;
+	background-color: #3C3B6E;
+	color:white;
+	font-size:1.2em;
+	opacity:0.9;	
+	line-height:110px;
+}
+
+.Bloc_3_bandeau { /* Entête sous-bloc 3 avec texte */
+	display:inline-block;
+	float:bottom;
+	width:100%;
+	text-align: center;
+	background-color: #3C3B6E;
+	color:white;
+	font-size:1.5em;
+	opacity:0.9;	
+  	line-height:35px;
+}
+
+.Bloc_3_3 { /* Sous-bloc 3 de sous-bloc 3 (visible) */
+	display: inline-block;
+	background-image:url("./Image(s)/Politique.jpg");	
+  	background-size:cover;
+  	float:right;
+  	width: 40%;
+  	height: 150px;
+  	border: 1px solid black;    
+}
+
+ 
+.Bloc_4 { /* Sous-bloc 4 */
+  	display: inline-block;
+  	width: 100%;
+  	height: 150px;   	
+  	margin-bottom:20px;
+}
+
+.Bloc_4_1 { /* Sous-bloc 1 de sous-bloc 4 (invisible) */
+	display: inline-block;
+  	float:left;
+  	width: 30%;
+  	height: 150px;   	
+}
+
+.Bloc_4_2 { /* Sous-bloc 2 de sous-bloc 4 (visible) */
+	display: inline-block;
+	background-image:url("./Image(s)/Sport.jpg");
+  	background-size:cover;
+  	float:left;
+  	width: 39%;
+  	height: 150px;
+  	border: 1px solid black;    
+}
+
+.Bloc_4-0_bandeau { /* Entête descriptive sous-bloc 3 avec texte */
+	display:inline-block;
+	width:100%;
+	height:77%;
+	font-size:0em;
+	opacity:0.9;	
+	line-height:110px;
+}
+
+.Bloc_4-0_bandeau:hover { /* Entête descriptive sous-bloc 3 avec texte */
+	display:inline-block;
+	width:100%;
+	height:77%;
+	text-align: center;
+	background-color: #3C3B6E;
+	color:white;
+	font-size:1.2em;
+	opacity:0.9;	
+	line-height:110px;
+}
+
+.Bloc_4_bandeau { /* Entête sous-bloc 4 avec texte */
+	display:inline-block;
+	float:bottom;
+	width:100%;
+	text-align: center;
+	background-color: #3C3B6E;
+	color:white;
+	font-size:1.5em;
+  	opacity:0.9;	
+  	line-height:35px;
+}
+
+.Bloc_4_3 { /* Sous-bloc 3 de sous-bloc 4 (invisible) */
+	display: inline-block;
+  	float:right;
+  	width: 30%;
+  	height: 150px;   
+}
+
+
+/* | Blocs de la partie latérale de la page (aside = utilisé pour la page "sous-catégories") | */
+.Bloc_secondaire {  /* Bloc contenant des sous-blocs (A,B,C) */
+  	display: inline-block;
+  	width: 20%;
+  	height:50%;
+}
+
+.Bloc_A { /* Sous-bloc A */
+  	display: inline-block;
+  	border: 1px solid black;    
+  	margin-bottom:20px;
+  	margin-left:20px;
+	position:fixed;
+	top:250px;
+	left:1150px;
+}
+
+.Bloc_B { /* Sous-bloc B */
+	background-image:url("./Image(s)/paris.jpg");
+	background-size:100%;
+	background-repeat:none;
+  	display: inline-block;
+  	font-size:3em;
+  	height: 150px;
+  	border: 1px solid black;     
+  	margin-bottom:18px;
+  	margin-left:20px;
+	position:fixed;
+	top:422px;
+	width:258px;
+	left:1150px;
+}
+
+.Bloc_C { /* Sous-bloc C */
+	background-image:url("./Image(s)/Archi1.jpg");
+	background-size:100%;
+	background-repeat:none;
+  	display: inline-block;
+  	font-size:3em;
+  	height: 150px;
+  	border: 1px solid black;    
+  	margin-left:20px; 
+  	margin-bottom:18px; 
+	position:fixed;
+	top:592px;
+	width:258px;
+	left:1150px;
+}
+
+.bandeauAsideB{
+	float: bottom;
+	width: 100%;
+	text-align: center;
+	background-color:#3C3B6E;
+	color:white;
+	font-size:0.5em;
+	opacity: 0.9;
+	line-height: 35px;
+	position:fixed;
+	width:258px;
+	top:538px;
+}
+
+.bandeauAsideC{
+	float: bottom;
+	width: 100%;
+	text-align: center;
+	background-color:#3C3B6E;
+	color:white;
+	font-size:0.5em;
+	opacity: 0.9;
+	line-height: 35px;
+	position:fixed;
+	width:258px;
+	top:710px;
+}
+
+
+/* || THEMATIQUES || */
+/* | Art | */
+.Bloc_categorie_Art {  
+	display: inline-block;    
+	width:90%;
+	margin-top:30px; 	
+}
+
+.Categorie_Art_1 { 
+	display: inline-block;
+	background-image:url("./Image(s)/Architecture.jpg");
+  	background-size:cover;
+  	width: 80%;
+  	height: 300px;
+  	border: 1px solid black;    
+  	margin-bottom:20px;
+}
+
+.Categorie_Art_2 { 
+	display: inline-block;
+	background-image:url("./Image(s)/Danse.jpg");
+  	background-size:cover;
+  	width: 80%;
+  	height: 300px;
+  	border: 1px solid black;    
+  	margin-bottom:20px;
+}
+
+.Categorie_Art_3 { 
+	display: inline-block;
+	background-image:url("./Image(s)/Films_et_séries.jpg");
+  	background-size:cover;
+  	width: 80%;
+  	height: 300px;
+  	border: 1px solid black;    
+  	margin-bottom:20px;
+}
+
+.Categorie_Art_4 { 
+	display: inline-block;
+	background-image:url("./Image(s)/Littérature.jpg");
+  	background-size:cover;
+  	width: 80%;
+  	height: 300px;
+  	border: 1px solid black;    
+  	margin-bottom:20px;
+}
+
+.Categorie_Art_5 { 
+	display: inline-block;
+	background-image:url("./Image(s)/Musique.jpg");
+  	background-size:cover;
+  	width: 80%;
+  	height: 300px;
+  	border: 1px solid black;    
+  	margin-bottom:20px;
+}
+
+.Categorie_Art_6 { 
+	display: inline-block;
+	background-image:url("./Image(s)/Poésie.jpg");
+  	background-size:cover;
+  	width: 80%;
+  	height: 300px;
+  	border: 1px solid black;    
+  	margin-bottom:20px;
+}
+
+.Categorie_Art_0-bandeau { 
+	display:inline-block;
+	width:100%;
+	height:89%;
+	font-size:0em;
+	opacity:0.9;	
+	line-height:110px;
+}
+
+.Categorie_Art_0-bandeau:hover { 
+	display:inline-block;
+	width:100%;
+	height:89%;
+	text-align: center;
+	background-color: #3C3B6E;
+	color:white;
+	font-size:1.2em;
+	opacity:0.9;	
+	line-height:320px;
+}
+
+.Categorie_Art_bandeau { 
+	display:inline-block;
+	width:100%;
+	float:bottom;
+	text-align: center;
+	background-color: #3C3B6E;
+	color:white;
+	font-size:1.5em;
+	opacity:0.9;	
+	line-height:35px;
+}
+
+
+/* | Gastronomie | */
+.Bloc_categorie_Gastronomie {  
+	display: inline-block;    
+	width:90%;
+	margin-top:30px; 	
+}
+
+.Categorie_Gastronomie_1 { 
+	display: inline-block;
+	background-image:url("./Image(s)/Boissons.jpg");
+  	background-size:cover;
+  	width: 80%;
+  	height: 300px;
+  	border: 1px solid black;    
+  	margin-bottom:20px;
+}
+
+.Categorie_Gastronomie_2 { 
+	display: inline-block;
+	background-image:url("./Image(s)/Fast Food.jpg");
+  	background-size:cover;
+  	width: 80%;
+  	height: 300px;
+  	border: 1px solid black;    
+  	margin-bottom:20px;
+}
+
+.Categorie_Gastronomie_3 { 
+	display: inline-block;
+	background-image:url("./Image(s)/Cuisine Traditionnelle.jpg");
+  	background-size:cover;
+  	width: 80%;
+  	height: 300px;
+  	border: 1px solid black;    
+  	margin-bottom:20px;
+}
+
+.Categorie_Gastronomie_4 { 
+	display: inline-block;
+	background-image:url("./Image(s)/Tea Time.jpg");
+  	background-size:cover;
+  	width: 80%;
+  	height: 300px;
+  	border: 1px solid black;    
+  	margin-bottom:20px;
+}
+
+.Categorie_Gastronomie_0-bandeau { 
+	display:inline-block;
+	width:100%;
+	height:89%;
+	font-size:0em;
+	opacity:0.9;	
+	line-height:110px;
+}
+
+.Categorie_Gastronomie_0-bandeau:hover { 
+	display:inline-block;
+	width:100%;
+	height:89%;
+	text-align: center;
+	background-color: #3C3B6E;
+	color:white;
+	font-size:1.2em;
+	opacity:0.9;	
+	line-height:320px;
+}
+
+.Categorie_Gastronomie_bandeau { 
+	display:inline-block;
+	width:100%;
+	float:bottom;
+	text-align: center;
+	background-color: #3C3B6E;
+	color:white;
+	font-size:1.5em;
+	opacity:0.9;	
+	line-height:35px;
+}
+
+
+/* | Mode de vie | */
+.Bloc_categorie_ModeVie {  
+	display: inline-block;    
+	width:90%;
+	margin-top:30px; 	
+}
+
+.Categorie_ModeVie_1 { 
+	display: inline-block;
+	background-image:url("./Image(s)/Festivités.jpg");
+  	background-size:cover;
+  	width: 80%;
+  	height: 300px;
+  	border: 1px solid black;    
+  	margin-bottom:20px;
+}
+
+.Categorie_ModeVie_2 { 
+	display: inline-block;
+	background-image:url("./Image(s)/Travail.jpg");
+  	background-size:cover;
+  	width: 80%;
+  	height: 300px;
+  	border: 1px solid black;    
+  	margin-bottom:20px;
+}
+
+.Categorie_ModeVie_3 { 
+	display: inline-block;
+	background-image:url("./Image(s)/Réseaux Sociaux.jpg");
+  	background-size:cover;
+  	width: 80%;
+  	height: 300px;
+  	border: 1px solid black;    
+  	margin-bottom:20px;
+}
+
+.Categorie_ModeVie_4 { 
+	display: inline-block;
+	background-image:url("./Image(s)/Société De Consommation.jpg");
+  	background-size:cover;
+  	width: 80%;
+  	height: 300px;
+  	border: 1px solid black;    
+  	margin-bottom:20px;
+}
+
+.Categorie_ModeVie_5 { 
+	display: inline-block;
+	background-image:url("./Image(s)/Système Scolaire.jpg");
+  	background-size:cover;
+  	width: 80%;
+  	height: 300px;
+  	border: 1px solid black;    
+  	margin-bottom:20px;
+}
+
+.Categorie_ModeVie_6 { 
+	display: inline-block;
+	background-image:url("./Image(s)/Vestimentaire.jpg");
+  	background-size:cover;
+  	width: 80%;
+  	height: 300px;
+  	border: 1px solid black;    
+  	margin-bottom:20px;
+}
+
+.Categorie_ModeVie_0-bandeau { 
+	display:inline-block;
+	width:100%;
+	height:89%;
+	font-size:0em;
+	opacity:0.9;	
+	line-height:110px;
+}
+
+.Categorie_ModeVie_0-bandeau:hover { 
+	display:inline-block;
+	width:100%;
+	height:89%;
+	text-align: center;
+	background-color: #3C3B6E;
+	color:white;
+	font-size:1.2em;
+	opacity:0.9;	
+	line-height:320px;
+}
+
+.Categorie_ModeVie_bandeau { 
+	display:inline-block;
+	width:100%;
+	float:bottom;
+	text-align: center;
+	background-color: #3C3B6E;
+	color:white;
+	font-size:1.5em;
+	opacity:0.9;	
+	line-height:35px;
+}
+
+
+/* | Politique | */
+.Bloc_categorie_Politique {  
+	display: inline-block;    
+	width:90%;
+	margin-top:30px; 	
+}
+
+.Categorie_Politique_1 { 
+	display: inline-block;
+	background-image:url("./Image(s)/Politique_2.jpg");
+  	background-size:cover;
+  	width: 80%;
+  	height: 300px;
+  	border: 1px solid black;    
+  	margin-bottom:20px;
+}
+
+
+.Categorie_Politique_0-bandeau { 
+	display:inline-block;
+	width:100%;
+	height:89%;
+	font-size:0em;
+	opacity:0.9;	
+	line-height:110px;
+}
+
+.Categorie_Politique_0-bandeau:hover { 
+	display:inline-block;
+	width:100%;
+	height:89%;
+	text-align: center;
+	background-color: #3C3B6E;
+	color:white;
+	font-size:1.2em;
+	opacity:0.9;	
+	line-height:320px;
+}
+
+.Categorie_Politique_bandeau { 
+	display:inline-block;
+	width:100%;
+	float:bottom;
+	text-align: center;
+	background-color: #3C3B6E;
+	color:white;
+	font-size:1.5em;
+	opacity:0.9;	
+	line-height:35px;
+}
+
+
+/* | Sport | */
+.Bloc_categorie_Sport {  
+	display: inline-block;    
+	width:90%;
+	margin-top:30px; 	
+}
+
+.Categorie_Sport_1 { 
+	display: inline-block;
+	background-image:url("./Image(s)/Sport_2.jpg");
+  	background-size:cover;
+  	width: 80%;
+  	height: 300px;
+  	border: 1px solid black;    
+  	margin-bottom:20px;
+}
+
+.Categorie_Sport_0-bandeau { 
+	display:inline-block;
+	width:100%;
+	height:89%;
+	font-size:0em;
+	opacity:0.9;	
+	line-height:110px;
+}
+
+.Categorie_Sport_0-bandeau:hover { 
+	display:inline-block;
+	width:100%;
+	height:89%;
+	text-align: center;
+	background-color: #3C3B6E;
+	color:white;
+	font-size:1.2em;
+	opacity:0.9;	
+	line-height:320px;
+}
+
+.Categorie_Sport_bandeau { 
+	display:inline-block;
+	width:100%;
+	float:bottom;
+	text-align: center;
+	background-color: #3C3B6E;
+	color:white;
+	font-size:1.5em;
+	opacity:0.9;	
+	line-height:35px;
+}
+
+
+
+
+/* || GALERIE MULTIMEDIA || */
+.Drapeaux { /* Bloc principal contenant des sous-blocs */
+  	display: inline-block;
+  	background-color: none; 
+  	width: 820px;
+  	height: 400px;  	
+}
+
+.Drapeaux:hover { /* Bloc principal contenant des sous-blocs */
+  	position:relative;    	
+}
+
+
+/* | Blocs des drapeaux | */
+.Drapeau_1 { /* Angleterre */
+  	display: inline-block;
+  	background-image:url("./Image(s)/drapeauAnglais.jpg");
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+  	width: 130px;
+  	height: 100%;
+  	border: 1px solid blue;
+	
+}
+.Drapeau_1:hover {
+	background-image:url("./Image(s)/londres.jpg");
+	position:absolute;
+	width:100%;
+	top: 0; 
+    right: 0;
+    bottom: 0; 
+    left: 0;
+	background-size:100% 100%;
+}
+
+.Pays1_dev { /* Angleterre */
+  	display: none;
+  	background-color:white;
+  	width: 130px;
+  	height: 100%;
+	position:absolute;
+	width:100%;
+	top: 0; 
+    right: 0;
+    bottom: 0; 
+    left: 0;
+	opacity:75%;
+}
+.Drapeau_1:hover .Pays1_dev{
+	display:inline-block;
+	width:100%;
+	background-color:white;
+  	height: 100%;
+}
+.Drapeau_2 { /* Brésil */
+  	display: inline-block;
+  	background-image:url("./Image(s)/drapeau_bresil.jpg");
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+  	width: 130px;
+  	height: 100%;
+  	border: 1px solid blue;
+	
+}
+.Drapeau_2:hover {
+	background-image:url("./Image(s)/rio.jpg");
+	position:absolute;
+	width:100%;
+	top: 0; 
+    right: 0;
+    bottom: 0; 
+    left: 0;
+	background-size:100% 100%;
+}
+
+.Pays2_dev { /* Brésil */
+  	display: none;
+  	background-color:white;
+  	width: 130px;
+  	height: 100%;
+	position:absolute;
+	width:100%;
+	top: 0; 
+    right: 0;
+    bottom: 0; 
+    left: 0;
+	opacity:75%;
+}
+.Drapeau_2:hover .Pays2_dev{
+	display:inline-block;
+	width:100%;
+	background-color:white;
+  	height: 100%;
+}
+.Drapeau_3 { /* Corée du Sud */
+  	display: inline-block;
+  	background-image:url("./Image(s)/drapCoree.jpg");
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+  	width: 130px;
+  	height: 100%;
+  	border: 1px solid blue;
+	
+}
+.Drapeau_3:hover {
+	background-image:url("./Image(s)/coree.jpg");
+	position:absolute;
+	width:100%;
+	top: 0; 
+    right: 0;
+    bottom: 0; 
+    left: 0;
+	background-size:100% 100%;
+}
+
+.Pays3_dev { /* Corée du Sud */
+  	display: none;
+  	background-color:white;
+  	width: 130px;
+  	height: 100%;
+	position:absolute;
+	width:100%;
+	top: 0; 
+    right: 0;
+    bottom: 0; 
+    left: 0;
+	opacity:75%;
+}
+.Drapeau_3:hover .Pays3_dev{
+	display:inline-block;
+	width:100%;
+	background-color:white;
+  	height: 100%;
+}
+.Drapeau_4 { /* Emirats arabes unis */
+  	display: inline-block;
+  	background-image:url("./Image(s)/drapEmirat.jpg");
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+  	width: 130px;
+  	height: 100%;
+  	border: 1px solid blue;
+	
+}
+.Drapeau_4:hover {
+	background-image:url("./Image(s)/eau.jpg");
+	position:absolute;
+	width:100%;
+	top: 0; 
+    right: 0;
+    bottom: 0; 
+    left: 0;
+	background-size:100% 100%;
+}
+
+.Pays4_dev { /* Emirats arabes unis */
+  	display: none;
+  	background-color:white;
+  	width: 130px;
+  	height: 100%;
+	position:absolute;
+	width:100%;
+	top: 0; 
+    right: 0;
+    bottom: 0; 
+    left: 0;
+	opacity:75%;
+}
+.Drapeau_4:hover .Pays4_dev{
+	display:inline-block;
+	width:100%;
+	background-color:white;
+  	height: 100%;
+}
+.Drapeau_5 { /* France */
+  	display: inline-block;
+  	background-image:url("./Image(s)/france.jpg");
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+  	width: 130px;
+  	height: 100%;
+  	border: 1px solid blue;
+	
+}
+.Drapeau_5:hover {
+	background-image:url("./Image(s)/paris.jpg");
+	position:absolute;
+	width:100%;
+	top: 0; 
+    right: 0;
+    bottom: 0; 
+    left: 0;
+	background-size:100% 100%;
+}
+
+.Pays5_dev { /* France */
+  	display: none;
+  	background-color:white;
+  	width: 130px;
+  	height: 100%;
+	position:absolute;
+	width:100%;
+	top: 0; 
+    right: 0;
+    bottom: 0; 
+    left: 0;
+	opacity:75%;
+}
+.Drapeau_5:hover .Pays5_dev{
+	display:inline-block;
+	width:100%;
+	background-color:white;
+  	height: 100%;
+}
+.Drapeau_6 { /* Mexique */
+  	display: inline-block;
+  	background-image:url("./Image(s)/drapMexique.jpg");
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+  	width: 130px;
+  	height: 100%;
+  	border: 1px solid blue;
+	
+}
+.Drapeau_6:hover {
+	background-image:url("./Image(s)/mex.jpg");
+	position:absolute;
+	width:100%;
+	top: 0; 
+    right: 0;
+    bottom: 0; 
+    left: 0;
+	background-size:100% 100%;
+}
+
+.Pays6_dev { /* Mexique */
+  	display: none;
+  	background-color:white;
+  	width: 130px;
+  	height: 100%;
+	position:absolute;
+	width:100%;
+	top: 0; 
+    right: 0;
+    bottom: 0; 
+    left: 0;
+	opacity:75%;
+}
+.Drapeau_6:hover .Pays6_dev{
+	display:inline-block;
+	width:100%;
+	background-color:white;
+  	height: 100%;
+}
+
+
+
+
+/* || ARTICLES (SOUS-CATEGORIE) || */
+/* | Blocs de la page | */
+.Bloc_article_1 {  /* Bloc principal contenant des sous-blocs (Bloc_article_1_1, Bloc_article_1_2) */
+	display: inline-block;    
+	width:80%;
+	margin-top:30px; 	
+	float:left;
+}
+
+.Bloc_article_1_1 { /* Sous-bloc partie "article" */
+	display: inline-block;    
+	width:73%;
+}
+
+.Bloc_article_1_2 { /* Sous-bloc partie "aside" */
+	position:fixed;
+	display: inline-block;    
+	width:20%;	
+	height:100%;	
+	float:right;
+}
+.AsideArticle { /* Sous-bloc partie "aside" */
+	position:fixed;
+	display: inline-block;    
+	width:20%;	
+	height:100%;	
+	float:right;
+}
+.AsideArticleA{
+  	display: inline-block;
+  	border: 1px solid black;    
+  	margin-bottom:20px;
+  	margin-left:20px;
+	position:fixed;
+	top:250px;
+	left:1375px;
+}
+.AsideArticleB{
+	background-image:url("./Image(s)/paris.jpg");
+	background-size:100%;
+	background-repeat:none;
+  	display: inline-block;
+  	font-size:3em;
+  	height: 172px;
+  	border: 1px solid black;     
+  	margin-bottom:18px;
+  	margin-left:20px;
+	position:fixed;
+	top:422px;
+	width:258px;
+	left:1375px;
+}
+.AsideArticleC{
+	background-image:url("./Image(s)/Archi1.jpg");
+	background-size:100%;
+	background-repeat:none;
+  	display: inline-block;
+  	font-size:3em;
+  	height: 150px;
+  	border: 1px solid black;    
+  	margin-left:20px; 
+  	margin-bottom:18px; 
+	position:fixed;
+	top:616px;
+	width:258px;
+	left:1375px;
+}
+.bandeauAsideBArticle {
+	float: bottom;
+	width: 100%;
+	text-align: center;
+	background-color:#3C3B6E;
+	color:white;
+	font-size:0.5em;
+	opacity: 0.9;
+	line-height: 35px;
+	position:fixed;
+	width:258px;
+	top:562px;
+}
+.bandeauAsideCArticle {
+	float: bottom;
+	width: 100%;
+	text-align: center;
+	background-color:#3C3B6E;
+	color:white;
+	font-size:0.5em;
+	opacity: 0.9;
+	line-height: 35px;
+	position:fixed;
+	width:258px;
+	top:732px;
+}
+
+/* | Paramètres de la partie "article" (Bloc_article_1_1) | */
+.entete h2 {
+	display:block;
+	text-align:center;
+	text-decoration: underline overline dotted #3C3B6E;
+	text-transform:uppercase;
+	color:#3C3B6E;
+	font-size:35px;
+}
+
+.entete img {
+	width:80%
+}
+
+.entete {
+	display:block;
+	text-align:center;
+}
+
+.entete .intro{
+	font-size:25px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	font-weight:900;
+}
+
+.sous-partie{
+	padding-bottom:10px;
+	border-bottom:3px dashed #3C3B6E;
+	padding-top:10px;
+}
+
+.contenu {
+	display:inline-block;
+	text-align:justify;
+	font-size:20px;
+	width:65%;
+	vertical-align:top;
+	padding:10px;
+	padding-top:0px;
+}
+
+.image {
+	display:inline-block;
+	width:30%;
+}
+
+.image img {
+	padding:0px;
+	margin:0px;
+	width:100%
+}
+
+.image {
+	padding:10px;
+	border:5px ridge red;
+}
+
+.image figcaption {
+	text-align:center;
+	text-decoration:underline double red;
+	color:red;
+	padding:3px;
+	padding-bottom:0px;
+}
+
+.image figure {
+	padding:0px;
+	margin:0px;
+	margin-top: 0;
+}
+
+  .bouttons {
+	display:block;
+	width:65%;
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.button1 {
+	background-image:url("./Image(s)/coree.jpg");
+	background-size:100% 100%;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius:50%;
+	margin-right:50px;
+}
+
+.button2 {
+	background-image:url("./Image(s)/paris.jpg");
+	background-size:100% 100%;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius:50%;
+	margin-left:50px;
+}
+
+.button3 {
+	background-image:url("./Image(s)/Archi4.jpg");
+	background-size:100% 100%;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius:50%;
+	margin-left:50px;
+}
+
+#lightgallery {
+display: inline-block;
+text-align: center;
+width: 100%;
+height: 100%;
+margin-top: 50px;
+}
